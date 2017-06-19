@@ -3,21 +3,24 @@ countA=0
 countT=0
 countG=0
 countC=0
+count=0
 
 for i in x:
+ count=count+1
  if i=="A":
-  countA=countA+16.66
+  countA=countA+1 
 for i in x:
  if i=="T":
-  countT=countT+16.66
+  countT=countT+1
 for i in x:
  if i=="G":
-  countG=countG+16.66
+  countG=countG+1
 for i in x:
  if i=="C":
-  countC=countC+16.66
+  countC=countC+1
 
-print countA
-print countT
-print countG
-print countC
+
+print float(countA)/float(count)
+print float(countT)/float(count)
+print float(countG)/float(count)
+print float(countC)/float(count)
