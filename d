@@ -6,16 +6,16 @@ countC=0
 
 for i in x:
  if i=="A":
-  countA=countA+1
+  countA=countA+16.66
 for i in x:
  if i=="T":
-  countT=countT+1
+  countT=countT+16.66
 for i in x:
  if i=="G":
-  countG=countG+1
+  countG=countG+16.66
 for i in x:
  if i=="C":
-  countC=countC+1
+  countC=countC+16.66
 
 print countA
 print countT
