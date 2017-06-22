@@ -1,0 +1,4 @@
+x="Betty Botter had some butter but she said this butter's bitter if I bake this bitter butter it would make my batter bitter but a bit of better butter that would make my batter better so she bought a bit of butter better than her bitter butter and she baked it in her batter and the batter was not bitter so 'twas better Betty Botter bought a bit of better butter"
+S=x.split()
+for i in S:
+ print i[::-1],
