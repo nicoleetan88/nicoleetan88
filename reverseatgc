@@ -1,0 +1,11 @@
+x="ATGACTGATACTGACT"
+y=x[::-1]
+for i in y:
+ if i=="A":
+  print"T",
+ if i=="T":
+  print"A",
+ if i=="G":
+  print"C",
+ if i=="C":
+  print"G",
