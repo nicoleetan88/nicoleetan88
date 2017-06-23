@@ -1,0 +1,13 @@
+file=open("/share/data/loginfo","r")
+x=file.readlines()
+login={}
+for i in x:
+  s=i.split()
+  login[s[0]]=s[1]
+
+l=raw_input('login ')
+p=raw_input('passwd ')
+
+if l in login.keys():
+ if p==login[l]:
+  print "your login is correct"
