@@ -1,0 +1,24 @@
+n=690
+
+a=[' ','one','two','three','four','five','six','seven','eight','nine']
+b=[' ','ten','twenty','thirty','forty','fifty','sixty','seventy','eighty','ninety']
+c=[' ','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen']
+d=[' ','one hundred','two hundred','three hundred','four hundred','five hundred','six hundred','seven hundred','eight hundred','nine hundred']
+
+if n<20:
+ print c[n] 
+ 
+if n>=20:
+ if n<100:
+  l=b[n/10]
+  m=a[n%10]
+  print l,m
+
+if n>=100:
+ k=d[n/100]
+ if (n-(n/100)*100)>=20:
+  l=b[(n%100)/10]
+  m=a[(n%100)%10]
+  print k,l,m
+ if (n-(n/100)*100)<20:
+  print k,c[n-(n/100)*100]
